@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: o;
+}
+
+body {
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 325px;
+    border-radius: 4rem;
+    margin: 0 1.6rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.sedans, .suvs, .luxury {
+    padding: 3rem;
+}
+
+img {
+    margin-bottom: 2rem;
+}
+
+.title {
+    margin-bottom: 1.8rem;
+}
+
+.desc {
+    margin-bottom: 1.6rem;
+}
+
+
+button {
+    width: 65%;
+    height: 3rem;
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.title {
+    font-size: 1.25rem;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.desc {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+}
+
+button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+@media (min-width: 375px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        max-width: 920px;
+        height: 500px;
+    }
+
+    .desc {
+        margin-bottom: 5rem;
+    } 
+
+    button {
+        width: 70%;
+    }
+
+    .sedans {
+        flex-basis: 33.33%;
+    }
+
+    .suvs {
+        flex-basis: 33.33%;
+    }
+
+    .luxury {
+        flex-basis: 33.33%;
+    }
+}
